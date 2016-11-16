@@ -1,7 +1,8 @@
 #!/bin/bash
 
 echo "--- Removing any pre-installed ffmpeg and x264"
-sudo add-apt-repository ppa:jon-severinsson/ffmpeg
+sudo add-apt-repository ppa:fnu/main-fnu
+sudo apt-get update
 sudo apt-get -qq remove ffmpeg x264 libx264-dev
 
 function install_dependency {
